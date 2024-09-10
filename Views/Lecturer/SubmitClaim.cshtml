@@ -1,14 +1,17 @@
-﻿<!-- Views/Lecturer/SubmitClaim.cshtml -->
-@model Claim
+﻿@model Claim
 
-<form asp-action="SubmitClaim" method="post">
-    <div>
-        <label for="HoursWorked">Hours Worked:</label>
-        <input type="number" id="HoursWorked" name="HoursWorked" required />
-    </div>
-    <div>
-        <label for="AmountDue">Amount Due:</label>
-        <input type="number" id="AmountDue" name="AmountDue" step="0.01" required />
-    </div>
-    <button type="submit">Submit Claim</button>
-</form>
+<div class="container mt-5">
+    <h1>Submit New Claim</h1>
+
+    <form asp-action="SubmitClaim" method="post">
+        <div class="form-group">
+            <label for="HoursWorked">Hours Worked:</label>
+            <input type="number" class="form-control" id="HoursWorked" name="HoursWorked" required />
+        </div>
+        <div class="form-group mt-3">
+            <label for="AmountDue">Amount Due:</label>
+            <input type="number" class="form-control" id="AmountDue" name="AmountDue" step="0.01" required />
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit Claim</button>
+    </form>
+</div>
