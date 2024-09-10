@@ -3,6 +3,38 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to the Contract Monthly Claim System</h1>
+    <p class="lead">A streamlined solution for managing and approving lecturer claims efficiently.</p>
+    
+    <!-- Quick Access Buttons -->
+    <div class="row justify-content-center mt-4">
+        <!-- Lecturer Section -->
+        <div class="col-md-6 mb-4">
+            <h3>Lecturers</h3>
+            <p>Submit your claims, view previous submissions, and upload supporting documents all in one place.</p>
+            <a href="@Url.Action("Dashboard", "Lecturer")" class="btn btn-primary btn-lg">
+                Go to Lecturer Dashboard
+            </a>
+        </div>
+        
+        <!-- Programme Coordinator Section -->
+        <div class="col-md-6 mb-4">
+            <h3>Programme Coordinators</h3>
+            <p>Review, approve, or reject lecturer claims and track the status of submissions.</p>
+            <a href="@Url.Action("Dashboard", "ProgrammeCoordinator")" class="btn btn-success btn-lg">
+                Go to Coordinator Dashboard
+            </a>
+        </div>
+    </div>
+
+    <!-- Learn More Section -->
+    <div class="mt-5">
+        <h2>How It Works</h2>
+        <p>The Contract Monthly Claim System (CMCS) is designed to make the claim submission and approval process smoother for both lecturers and programme coordinators. With CMCS, you can:</p>
+        <ul class="list-unstyled lead">
+            <li><i class="bi bi-check-circle-fill"></i> Submit and track claims with ease.</li>
+            <li><i class="bi bi-check-circle-fill"></i> Upload supporting documents quickly.</li>
+            <li><i class="bi bi-check-circle-fill"></i> Programme coordinators can review, approve, or reject claims efficiently.</li>
+        </ul>
+    </div>
 </div>
