@@ -1,18 +1,28 @@
-﻿@model TModel
+﻿<!-- Views/Lecturer/ViewClaims.cshtml -->
+@model List<Claim>
 
-@{
-    Layout = null;
-}
+<h2>Submitted Claims</h2>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>
+<table>
+    <thead>
+        <tr>
+            <th>Claim ID</th>
+            <th>Date Submitted</th>
+            <th>Hours Worked</th>
+            <th>Amount Due</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.ClaimID</td>
+                <td>@claim.DateSubmitted.ToString("dd-MM-yyyy")</td>
+                <td>@claim.HoursWorked</td>
+                <td>@claim.AmountDue</td>
+                <td>@claim.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

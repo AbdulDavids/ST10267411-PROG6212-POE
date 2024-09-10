@@ -1,18 +1,36 @@
-﻿@model TModel
+﻿<!-- Views/ProgrammeCoordinator/ApproveClaims.cshtml -->
+@model List<Claim>
 
-@{
-    Layout = null;
-}
+<h2>Pending Claims</h2>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>
+<table>
+    <thead>
+        <tr>
+            <th>Claim ID</th>
+            <th>Lecturer</th>
+            <th>Date Submitted</th>
+            <th>Hours Worked</th>
+            <th>Amount Due</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.ClaimID</td>
+                <td>@claim.Lecturer.Name</td>
+                <td>@claim.DateSubmitted.ToString("dd-MM-yyyy")</td>
+                <td>@claim.HoursWorked</td>
+                <td>@claim.AmountDue</td>
+                <td>
+                    <form asp-action="ApproveClaim" method="post">
+                        <input type="hidden" name="claimID" value="@claim.ClaimID" />
+                        <button type="submit" name="isApproved" value="true">Approve</button>
+                        <button type="submit" name="isApproved" value="false">Reject</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
