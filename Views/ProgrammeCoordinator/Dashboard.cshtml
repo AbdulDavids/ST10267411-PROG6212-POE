@@ -1,0 +1,40 @@
+﻿@model List<Claim>
+
+<div class="container mt-5">
+    <h1>Programme Coordinator Dashboard</h1>
+
+    <h2>Pending Claims for Approval</h2>
+
+    <table class="table table-hover mt-3">
+        <thead>
+        <tr>
+            <th>Claim ID</th>
+            <th>Lecturer Name</th>
+            <th>Date Submitted</th>
+            <th>Hours Worked</th>
+            <th>Amount Due</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.ClaimID</td>
+                <td>@claim.Lecturer.Name</td>
+                <td>@claim.DateSubmitted.ToString("dd-MM-yyyy")</td>
+                <td>@claim.HoursWorked</td>
+                <td>@claim.AmountDue</td>
+                <td>
+                    <form method="post" action="@Url.Action("ApproveClaim", "ProgrammeCoordinator", new { claimID = claim.ClaimID })">
+                        <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                    </form>
+                    <form method="post" action="@Url.Action("RejectClaim", "ProgrammeCoordinator", new { claimID = claim.ClaimID })">
+                        <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+                    </form>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
