@@ -13,6 +13,9 @@
             <th>Date Submitted</th>
             <th>Hours Worked</th>
             <th>Amount Due</th>
+            <th>Document</th>
+                        <th>Notes</th>
+
             <th>Actions</th>
         </tr>
         </thead>
@@ -21,10 +24,29 @@
         {
             <tr>
                 <td>@claim.ClaimID</td>
-                <td>@claim.Lecturer.Name</td>
+                <td>@claim.LecturerName</td>
                 <td>@claim.DateSubmitted.ToString("dd-MM-yyyy")</td>
                 <td>@claim.HoursWorked</td>
                 <td>@claim.AmountDue</td>
+                <td>@claim.docUpload</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#notesModal-@claim.ClaimID">
+                        View Notes
+                    </button>
+                    <div class="modal fade" id="notesModal-@claim.ClaimID" tabindex="-1" aria-labelledby="notesModalLabel-@claim.ClaimID" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="notesModalLabel-@claim.ClaimID">Notes</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    @claim.Description
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
                 <td>
                     <form method="post" action="@Url.Action("ApproveClaim", "ProgrammeCoordinator", new { claimID = claim.ClaimID })">
                         <button type="submit" class="btn btn-success btn-sm">Approve</button>
@@ -38,3 +60,7 @@
         </tbody>
     </table>
 </div>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
