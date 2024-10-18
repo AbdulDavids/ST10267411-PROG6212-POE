@@ -7,10 +7,12 @@
     <thead>
         <tr>
             <th>Claim ID</th>
+            <th>Lecturer</th>
             <th>Date Submitted</th>
             <th>Hours Worked</th>
             <th>Amount Due</th>
             <th>Status</th>
+            <th>Document</th>
         </tr>
     </thead>
     <tbody>
@@ -18,10 +20,12 @@
         {
             <tr>
                 <td>@claim.ClaimID</td>
+                <td>@claim.LecturerName</td>
                 <td>@claim.DateSubmitted.ToString("dd-MM-yyyy")</td>
                 <td>@claim.HoursWorked</td>
                 <td>@claim.AmountDue</td>
                 <td>@claim.Status</td>
+                <td><a href="https://abduldavids.co.za/">@claim.docUpload</a></td>
             </tr>
         }
     </tbody>

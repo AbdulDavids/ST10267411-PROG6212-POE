@@ -4,14 +4,32 @@
     <h1>Submit New Claim</h1>
 
     <form asp-action="SubmitClaim" method="post">
+     
+            <div class="form-group">
+                <label for="lecturerName">Lecturer Name</label>
+                <input type="text" class="form-control" id="lecturerName" name="LecturerName" required>
+            </div>
+       
+
         <div class="form-group">
             <label for="HoursWorked">Hours Worked:</label>
-            <input type="number" class="form-control" id="HoursWorked" name="HoursWorked" required />
+            <input type="number" class="form-control" id="HoursWorked" name="HoursWorked" required/>
         </div>
         <div class="form-group mt-3">
             <label for="AmountDue">Amount Due:</label>
-            <input type="number" class="form-control" id="AmountDue" name="AmountDue" step="0.01" required />
+            <input type="number" class="form-control" id="AmountDue" name="AmountDue" step="0.01" required/>
         </div>
+        <div>
+            <label for="docUpload">Upload a document</label>
+            <input type="file" class="form-control" id="docUpload" name="docUpload" required/>
+        </div>
+        <div class="form-group mt-3">
+            <label for="Notes">Notes:</label>
+        <input type="text" class="form-control" id="Description" name="Description" />
+        </div>
+        
+        
+        
         <button type="submit" class="btn btn-primary mt-3">Submit Claim</button>
     </form>
 </div>
