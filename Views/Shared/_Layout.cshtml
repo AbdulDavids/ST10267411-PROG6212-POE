@@ -60,8 +60,8 @@
                                 Lecturer Actions
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="lecturerDropdown">
+                                <li><a class="dropdown-item" asp-controller="Lecturer" asp-action="Dashboard">View Claims</a></li>
                                 <li><a class="dropdown-item" asp-controller="Lecturer" asp-action="SubmitClaim">Submit Claim</a></li>
-                                <li><a class="dropdown-item" asp-controller="Lecturer" asp-action="ViewClaims">View Claims</a></li>
                                 <li><a class="dropdown-item" asp-controller="Lecturer" asp-action="UploadDocuments">Upload Documents</a></li>
                             </ul>
                         </li>
@@ -72,7 +72,7 @@
                                 Coordinator Actions
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="coordDropdown">
-                                <li><a class="dropdown-item" asp-controller="ProgrammeCoordinator" asp-action="ApproveClaims">Approve Claims</a></li>
+                                <li><a class="dropdown-item" asp-controller="ProgrammeCoordinator" asp-action="Dashboard">Approve Claims</a></li>
                             </ul>
                         </li>
                     </ul>
