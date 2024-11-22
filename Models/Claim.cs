@@ -7,6 +7,8 @@ public class Claim
     public string LecturerName { get; set; }
     public DateTime DateSubmitted { get; set; }
     public float HoursWorked { get; set; }
+    
+    public float HourlyRate { get; set; }
     public float AmountDue { get; set; }
     public string Status { get; set; } // Pending, Approved, Rejected
     

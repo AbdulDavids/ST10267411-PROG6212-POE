@@ -30,6 +30,7 @@ namespace PROG6212_POE.Controllers
         {
             claim.Status = "Pending"; // Initially set the status to "Pending"
             claim.DateSubmitted = DateTime.Now;
+            claim.AmountDue = claim.HoursWorked * claim.HourlyRate; // Calculate the amount due here based on the hours worked and hourly rate
             claims.Add(claim);
             return RedirectToAction("Dashboard");
         }

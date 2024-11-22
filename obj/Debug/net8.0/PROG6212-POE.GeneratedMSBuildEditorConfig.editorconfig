@@ -9,63 +9,67 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PROG6212_POE
 build_property.RootNamespace = PROG6212_POE
-build_property.ProjectDir = C:\Users\User\source\repos\PROG6212-POE\
+build_property.ProjectDir = C:\Users\User\RiderProjects\ST10267411-PROG6212-POE\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\source\repos\PROG6212-POE
+build_property.MSBuildProjectDirectory = C:\Users\User\RiderProjects\ST10267411-PROG6212-POE
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/Home/Index.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/Home/Privacy.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/Lecturer/Dashboard.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/Lecturer/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/Lecturer/SubmitClaim.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/Lecturer/SubmitClaim.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcU3VibWl0Q2xhaW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/Lecturer/UploadDocuments.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/Lecturer/UploadDocuments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcVXBsb2FkRG9jdW1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/Lecturer/ViewClaims.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/Lecturer/ViewClaims.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcVmlld0NsYWltcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/ProgrammeCoordinator/ApproveClaims.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/ProgrammeCoordinator/ApproveClaims.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbW1lQ29vcmRpbmF0b3JcQXBwcm92ZUNsYWltcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/ProgrammeCoordinator/Dashboard.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/ProgrammeCoordinator/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbW1lQ29vcmRpbmF0b3JcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/Shared/Error.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/_ViewImports.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/_ViewStart.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/PROG6212-POE/Views/Shared/_Layout.cshtml]
+[C:/Users/User/RiderProjects/ST10267411-PROG6212-POE/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-v8kkf3eq0l
