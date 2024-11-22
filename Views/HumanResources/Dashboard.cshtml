@@ -1,0 +1,26 @@
+﻿@model List<Claim>
+
+<h2>Lecturer Claims</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Claim ID</th>
+        <th>Lecturer ID</th>
+        <th>Status</th>
+        <th>Date Submitted</th>
+        <th>Amount Due</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var claim in Model)
+    {
+        <tr>
+            <td>@claim.ClaimID</td>
+            <td>@claim.Status</td>
+            <td>@claim.DateSubmitted</td>
+            <td>@claim.AmountDue</td>
+        </tr>
+    }
+    </tbody>
+</table>
